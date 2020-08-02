@@ -25,7 +25,7 @@ namespace RedLockNet.Tests
 		{
 			ThreadPool.SetMinThreads(100, 100);
 
-			loggerFactory = new LoggerFactory().AddConsole(LogLevel.Debug);
+			loggerFactory = new LoggerFactory();
 			logger = loggerFactory.CreateLogger<RedLockTests>();
 		}
 
